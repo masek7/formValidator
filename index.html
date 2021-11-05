@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="form.css">
+    <title>Validador de formulário</title>
+</head>
+<body>
+    <div class="Background">
+          <div class="container">
+
+        <h1>Formulário</h1>
+        <div id="nome">
+            <h2>Nome:</h2>
+            <input type="text" name="" id="nameInput" placeholder="Insira seu nome" class="Inputs">
+        </div>
+        <div id="sobrenome">
+            <h2>Sobrenome:</h2>
+            <input type="text" name="" id="sobrenomeInput" placeholder="Insira seu sobrenome" class="Inputs">
+        </div>
+        <div id="email">
+            <h2>E-mail:</h2>
+            <input type="email" name="" id="emailInput" placeholder="Insira seu e-mail" class="Inputs">
+        </div>
+        <div id="senha">
+            <h2>Senha:</h2>
+            <input type="password" name="" id="senhaInput" placeholder="Sua senha deve ter 8 dígitos, no mínimo." class="Inputs">
+        </div>
+        <div id="telefone">
+            <h2>Telefone:</h2>
+            <input type="number" name="" id="telefoneInput" placeholder="(99) 9999-9999" class="Inputs">
+        </div>
+        <div id="cep">
+            <h2>CEP:</h2>
+            <input type="number" name="" id="cepInput" placeholder="Insira seu CEP" class="Inputs">
+
+        </div>
+        <div id="enviar">
+            <button type="submit" id="botao" onclick="verificar()">Enviar</button>
+        </div>
+       
+        </div>
+    </div>
+  
+    
+</body>
+<script src="form.js"></script>
+</html>

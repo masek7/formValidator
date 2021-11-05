@@ -1,0 +1,102 @@
+.Background{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+body{
+    background-color: lightsalmon;
+}
+
+.container{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    width: 800px;
+    height: 900px;
+    background-color:rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px 25px;
+    grid-template-areas: 
+    "Titulo Titulo"
+    "Nome Nome"
+    "Sobrenome Sobrenome"
+    "Email Email"
+    "Senha Senha"
+    "Telefone Cep"
+    "Enviar Enviar"
+    ;
+    border-radius: 10px;
+    padding: 2%;
+    color: #ffa07a;
+
+}
+
+h1{
+    align-self: center;
+    justify-self: center;
+    grid-area: Titulo;
+
+}
+
+#nome{
+    grid-area: Nome;
+}
+#sobrenome{
+    grid-area: Sobrenome;
+}
+#email{
+    grid-area: Email;
+}
+#senha{
+    grid-area: Senha;
+
+}
+#telefone{
+   
+    width: 90%;
+    grid-area: Telefone;
+}
+#cep{
+    width: 90%;
+    grid-area: Cep;
+    
+    
+}
+#enviar{
+    padding-top: 5%;
+    grid-area: Enviar;
+    
+}
+
+
+
+.Inputs{
+    font-weight: bolder;
+
+    border-style: solid;
+    border-color:  rgb(238, 238, 238);
+    background-color: rgb(238, 238, 238);
+    border-radius: 5px;
+    padding-left: 1%;
+    width: 90%;
+    height: 30px;
+}
+
+#botao{
+    border-radius: 10px;
+    border-style: none;
+   
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+    font-weight: bolder;
+    background-color: lightsalmon;
+    color: white;
+}
+h1{
+    color: lightsalmon;
+}
