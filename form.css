@@ -7,34 +7,45 @@
 
 
 body{
-    background-color: lightsalmon;
+    background-color: #fbff8f;
 }
 
 .container{
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
     width: 800px;
-    height: 900px;
+    
     background-color:rgb(255, 255, 255);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 10px 25px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    gap: 10px 0;
     grid-template-areas: 
     "Titulo Titulo"
     "Nome Nome"
     "Sobrenome Sobrenome"
+    
     "Email Email"
     "Senha Senha"
-    "Telefone Cep"
+    
+    "Telefone Telefone"
+    "Cep Cep"
     "Enviar Enviar"
     ;
-    border-radius: 10px;
+    border-radius: 5px;
+    border-color: black;
+    border-style: solid;
     padding: 2%;
-    color: #ffa07a;
+    color: black;
 
 }
-
+#Infos{
+    margin-top: 0.5%;
+    width: 100%;
+    align-self: center;
+    justify-self: start;
+    grid-area: Infos;
+}
 h1{
     align-self: center;
     justify-self: center;
@@ -57,11 +68,11 @@ h1{
 }
 #telefone{
    
-    width: 90%;
+    width: 100%;
     grid-area: Telefone;
 }
 #cep{
-    width: 90%;
+    width: 100%;
     grid-area: Cep;
     
     
@@ -76,27 +87,59 @@ h1{
 
 .Inputs{
     font-weight: bolder;
-
     border-style: solid;
-    border-color:  rgb(238, 238, 238);
+    border-color:  black;
     background-color: rgb(238, 238, 238);
     border-radius: 5px;
     padding-left: 1%;
     width: 90%;
-    height: 30px;
+    height: 50px;
 }
 
 #botao{
-    border-radius: 10px;
-    border-style: none;
-   
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
     width: 200px;
-    height: 30px;
+    height: 50px;
     cursor: pointer;
     font-weight: bolder;
-    background-color: lightsalmon;
-    color: white;
+    background-color: rgb(238, 238, 238);
+    color: black;
 }
 h1{
-    color: lightsalmon;
+    color: black;
 }
+
+/*Removendo Arrows*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+
+
+
+  /* Mobile Interface */
+  @media (max-width:415px ) {
+    .Inputs{
+        padding-left: 2%;
+        margin-left: 3%;
+        height: 50px;
+    }
+    h2{
+        margin-left: 3%;
+    }
+   #botao{
+       width: 93.5%;
+       margin-left: 3%;
+   }
+    
+    
+    
+    
+  }

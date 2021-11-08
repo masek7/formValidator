@@ -24,7 +24,7 @@
         tudoCerto = false;
     } 
 
-    if(email.value =="" || email.value.indexOf('@') ==-1){
+    if(email.value =="" || email.value.indexOf('@') ==-1 || email.value.indexOf('.com') ==-1){
         email.style.borderColor ="red";
         tudoCerto = false;
     }
@@ -39,7 +39,7 @@
         tudoCerto = false;
     }
 
-    if(cep.value.length <=0){
+    if(cep.value.length < 8){
         cep.style.borderColor ="red";
         tudoCerto = false;
     }
@@ -49,14 +49,14 @@
         sobrenome.value= "";
         email.value= "";
         senha.value= "";
-        telefone="";
+        telefone.value="";
         cep.value="";
-        nome.style.borderColor= "rgb(238, 238, 238)";
-        sobrenome.style.borderColor= "rgb(238, 238, 238)";
-        email.style.borderColor= "rgb(238, 238, 238)";
-        senha.style.borderColor= "rgb(238, 238, 238)";
-        telefone.style.borderColor= "rgb(238, 238, 238)";
-        cep.style.borderColor= "rgb(238, 238, 238)";
+        nome.style.borderColor= "rgb(0, 0, 0)";
+        sobrenome.style.borderColor= "rgb(0, 0, 0)";
+        email.style.borderColor= "rgb(0, 0, 0)";
+        senha.style.borderColor= "rgb(0, 0, 0)";
+        telefone.style.borderColor= "rgb(0, 0, 0)";
+        cep.style.borderColor= "rgb(0, 0, 0)";
     } 
     }
         
