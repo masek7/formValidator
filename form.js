@@ -1,15 +1,15 @@
 
 
-    var nome = document.getElementById('nameInput');
-    var sobrenome= document.getElementById('sobrenomeInput');
-    var email = document.getElementById('emailInput');
-    var senha = document.getElementById('senhaInput');
-    var telefone = document.getElementById('telefoneInput');
-    var cep = document.getElementById('cepInput');
-    var divSenha= document.getElementById('senha');
+    let nome = document.getElementById('nameInput');
+    let sobrenome= document.getElementById('sobrenomeInput');
+    let email = document.getElementById('emailInput');
+    let senha = document.getElementById('senhaInput');
+    let telefone = document.getElementById('telefoneInput');
+    let cep = document.getElementById('cepInput');
+    let divSenha= document.getElementById('senha');
 
 
-    var tudoCerto;
+    let tudoCerto;
 
     function verificar() {
         tudoCerto=true;
